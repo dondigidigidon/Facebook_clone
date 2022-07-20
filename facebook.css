@@ -1,0 +1,313 @@
+/* Шрифт текста под фейсбуком */
+@font-face {
+    font-family: "SFProDisplay-Regular"; 
+    src: url("FontsFree-Net-SFProDisplay-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    height: 90px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.middle {
+    display: flex;
+    max-width: 975px;
+    width: 100%;
+    height: 500px;
+    /* outline: 1px solid #f00; */
+    /* выровнен по середине своего родителя */
+    margin: 0 auto;
+    gap: 30px;
+}
+/* Левая часть мидла */
+.Class_1-2 {
+    height: 100%;
+    max-width: 490px;
+}
+/* Фон-фейсбук */
+.Class_1-2_facebook {
+    background-image: url(label.svg);
+    /*Отключение повторения фона (из-за увеличения габаритов отцовского блока)*/
+    background-repeat: no-repeat;
+    margin-left: -30px;
+    height: 106px;
+}
+/* Текст под фейсбуком */
+.Class_1-2_text {
+    /* Подключение шрифта */
+    font-family: "SFProDisplay-Regular";
+    /* Высота шрифта */
+    font-size: 21pt;
+    /* Устанавливает интерлиньяж (межстрочный интервал) текста, отсчет ведется от базовой линии шрифта. */
+    line-height: 32px;
+}
+
+
+/* Правая часть мидла */
+.Class_3 {
+    /* float: left; */
+    height: 465px;
+    max-width: 390px;
+}
+/* Форма */
+.Form{
+    height: 365px;
+    max-width: 390px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    padding: 15px; 
+
+    display: flex;
+
+    gap: 10px;
+}
+/* Первые три строки формы*/
+.Form_x {
+    height: 54px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    overflow: hidden;
+}
+/* Первые две строки формы */
+.Pole {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    /* Красная строка */
+    text-indent: 10px;
+}
+/* Вторая строка формы */
+.Pole_2 {
+    margin-top: 2px;
+}
+/* При фокусировке */
+.Pole:focus {
+    outline: rgb(34, 114, 180);
+}
+
+
+/* Кнопка Вход */
+.Bottom_link_enter {
+    height: 54px;
+    border-radius: 6px;
+
+    background-color: rgb(34, 114, 180);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 125%;
+
+    /* Убрать подчеркивание */
+    text-decoration:none;
+
+    text-align: center;
+    padding: 15px;
+    margin-top: 5px;
+}
+/* Изменение при наведении Кнопки Вход*/
+.Bottom_link_enter:hover {
+    outline: rgb(31, 101, 158);
+}
+
+
+/* Забыли пароль? */
+.Question_link {
+    height: 32px;
+
+    /* Убрать подчеркивание */
+    text-decoration:none;
+
+    color: rgb(34, 114, 180);
+    line-height: 32px;
+    text-align: center;
+    font-size: 0.95em;
+}
+/* Посещенная ссылка (при наведении мыши добавить подчеркивание) */
+.Question_link:visited {
+    color: rgb(34, 114, 180);
+}
+/* При наведении мыши добавить подчеркивание */
+.Question_link:hover {
+    text-decoration: solid;
+}
+
+
+/* Разделитель(ная полоса) */
+hr {
+    border: 0;
+    border-top: 1px solid #dddfe2;
+    width: 100%;
+    height: 1px;
+}
+
+
+/* Создать аккаунт */
+.Account_link {
+    height: 45px;
+    width: 180px;
+    margin: auto;
+
+    border-radius: 6px;
+
+    background-color: rgb(67, 150, 60);
+    font-size: 110%;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+
+    /* Убрать подчеркивание */
+    text-decoration:none;
+
+    /* Выравнивание по центру */
+    padding: 14px;
+    text-align: center;
+
+    /* Выравнивание по центру
+    display: grid;
+    place-items: center; */
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Изменение рамки при наведении Создать Аккаунт*/
+.Bottom_link_enter:hover {
+    outline: rgb(31, 101, 158);
+}
+/* Изменение фона при наведении Создать Аккаунт*/
+.Bottom_link_enter:hover {
+    background-color: rgb(54, 122, 48);
+}
+
+/* Под Формой
+(Создать Страницу) */
+.Create_form_bottom {
+    display: block;
+    max-width: 390px;
+    height: 100px;
+    text-align: center;
+    /* внутренние отступы */
+    padding: 15px;
+    /* Устанавливает интерлиньяж (межстрочный интервал) текста, отсчет ведется от базовой линии шрифта. */
+    line-height: 20px;
+
+    overflow: visible;
+}
+/* Создать Страницу */
+.create_text{
+    color: black;
+    font-weight: bold;
+    /* Убрать подчеркивание */
+    text-decoration:none;
+}
+/* При наведении на текст появляется подчеркивание */
+.create_text:hover {
+    /* подчеркивание */
+    text-decoration: solid;
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Левая и правая белые рамки (div, в который обернут General_bottom) */
+.Right_and_left {
+    background-color: white;
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+.General_bottom {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+
+    max-width: 975px;
+    margin: 0 auto;
+
+    /* outline: 1px solid #f00; */
+}
+
+/* Первая строка */
+.First_line {
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: center;
+}
+/* Первое слово-ссылка (Русский) */
+.Russian {
+    color: rgb(154, 153, 153);
+}
+/* Кнопка + в конце строки */
+.bottom_plus {
+    /* Позиция фона: оцентровка */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(plus2.png);
+    background-color: rgb(243, 243, 243);
+
+    border: 2px solid #c3c3c3;
+    border-radius:  3px 3px 3px 3px;
+    margin: 5px;
+
+    width: 45px;
+    height: 30px;
+}
+
+
+/* Разделительная полоса */
+.Hr {
+    height: 3px;
+    width: 99%;
+}
+
+
+/* Вторая строка */
+.Second_line {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    /* Перенос */
+    /* white-space: pre; */
+    /* line-break: anywhere; */
+    /* hyphens: auto; */
+    /* overflow-wrap: break-word; */
+    /* word-break: break-all; */
+    /* overflow: auto; */
+}
+
+
+/* Слова в строках */
+.Line_link {
+    /* Убрать подчеркивание */
+    text-decoration:none;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+}
+
+/* Копирайт */
+.Facebook_bottom_link {
+    /* Убрать подчеркивание */
+    text-decoration: none;
+    margin-top: 60px;
+    margin-left: 6px;
+    font-size: 75%;
+    color: rgb(154, 153, 153);
+    margin-bottom: 70px;
+}
